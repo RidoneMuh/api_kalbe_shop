@@ -1,0 +1,32 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Customer;
+use Carbon\Carbon;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class CustomerSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        // dd(new Carbon('2016-01-23'));
+        Customer::create([
+            'txtCustomerName' => 'Andi',
+            'txtCustomerAddress' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam provident suscipit laboriosam quam laudantium? Quae, totam inventore? Sequi veritatis doloribus eius tempore aliquam porro eveniet, alias quas reprehenderit cum?',
+            'bitGender' => '1',
+            'dtmBirthDate' => new Carbon('1995/10/15'),
+        ]);
+
+        Customer::create([
+            'txtCustomerName' => 'Indah',
+            'txtCustomerAddress' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam provident suscipit laboriosam quam laudantium? Quae, totam inventore? Sequi veritatis doloribus eius tempore aliquam porro eveniet, alias quas reprehenderit cum?',
+            'bitGender' => '0',
+            'dtmBirthDate' => new Carbon('1998/09/29'),
+        ]);
+    }
+}
