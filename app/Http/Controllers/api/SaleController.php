@@ -15,7 +15,7 @@ class SaleController extends Controller
      */
     public function index()
     {
-        $sales = Sale::all();
+        $sales = Sale::with('customer:intCustomerID,txtCustomerName', 'product:intProductID,txtProductName')->get();
 
         return new SaleResource(true, 'List of All Sales', $sales);
     }
