@@ -87,6 +87,7 @@ class ProductController extends Controller
                 'message' => 'Product not found'
             ], 422);
         }
+
         $product->update([
             'txtProductCode' => $request->product_code,
             'txtProductName' => $request->product_name,

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\api\CustomerController;
 use App\Http\Controllers\api\ProductController;
+use App\Http\Controllers\api\SaleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 // Products
 Route::apiResource('products', ProductController::class);
 Route::apiResource('customers', CustomerController::class);
+Route::apiResource('sales', SaleController::class);

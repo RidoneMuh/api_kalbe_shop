@@ -17,14 +17,14 @@ class CustomerSeeder extends Seeder
         // dd(new Carbon('2016-01-23'));
         Customer::create([
             'txtCustomerName' => 'Andi',
-            'txtCustomerAddress' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam provident suscipit laboriosam quam laudantium? Quae, totam inventore? Sequi veritatis doloribus eius tempore aliquam porro eveniet, alias quas reprehenderit cum?',
+            'txtCustomerAddress' => 'Jl. Swantara Utara IV No. 9A, Bekasi Barat',
             'bitGender' => '1',
             'dtmBirthDate' => new Carbon('1995/10/15'),
         ]);
 
         Customer::create([
             'txtCustomerName' => 'Indah',
-            'txtCustomerAddress' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam provident suscipit laboriosam quam laudantium? Quae, totam inventore? Sequi veritatis doloribus eius tempore aliquam porro eveniet, alias quas reprehenderit cum?',
+            'txtCustomerAddress' => 'Jl. Dirganta Blok B8, Cengkareng',
             'bitGender' => '0',
             'dtmBirthDate' => new Carbon('1998/09/29'),
         ]);
